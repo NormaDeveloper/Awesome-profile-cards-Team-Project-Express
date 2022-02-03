@@ -7,7 +7,9 @@ const server = express();
 
 // Configuramos el servidor
 server.use(cors());
-server.use(express.json());
+server.use(express.json({ limit: "10mb" }));
+
+
 
 // Arrancamos el servidor en el puerto 3000
 const serverPort = 4000;
@@ -18,6 +20,7 @@ server.listen(serverPort, () => {
 // ENDPOINTS
 //Endpoint Create Cards
 server.post('/card', (req, res) => {
+
   const responseSuccess = {
     success: true,
     cardURL: 'https://awesome-profile-cards.herokuapp.com/card/${cardId}',
@@ -27,10 +30,19 @@ server.post('/card', (req, res) => {
     error: 'Error description',
   };
 
-  res.json(responseSuccess);
+  if (req.body.palette !== '' && req.body.name !== '' && req.body.job !== '' && req.body.email !== '' && req.body.linkedin !== '' && req.body.github !== '' && req.body.photo !== '') {
+    res.json(responseSuccess)
+  } else {
+    res.json(responseError)
+
+  }
 });
 
 //Endpoint Show Cards
 server.get('/card/99282828282', (req, res) => {
   //RUTA PARA MOSTRAR TARJETA
 });
+
+// Servidor estático
+const staticServerPath = "./src/public-react"
+server.use(express.static(staticServerPath));
