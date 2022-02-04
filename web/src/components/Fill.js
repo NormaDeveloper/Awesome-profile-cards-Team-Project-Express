@@ -15,7 +15,7 @@ const Fill = (props) => {
       />
       <div
         className={`labelsWrapper ${props.collapsibles.fill ? "hidden" : null}`}
-        
+
       >
         <Inputs
           labelClass="label"
@@ -46,6 +46,7 @@ const Fill = (props) => {
         <GetAvatar
           avatar={props.data.photo}
           updateAvatar={props.updateAvatar}
+
         />
 
         <Inputs

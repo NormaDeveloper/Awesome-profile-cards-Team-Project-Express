@@ -19,7 +19,7 @@ function GetAvatar(props) {
     // console.log('La usuaria ha abierto la ventana para elegir ficheros');
 
     // cuando se abre la ventana de nuestro navegador podemos elegir uno o varios ficheros por ello ev.currentTarget.files es una array
-    // console.log('La usuaria ha elegido los ficheros', ev.currentTarget.files);
+    console.log('La usuaria ha elegido los ficheros', ev.currentTarget.files);
 
     // para este ejercicio nos interesa solo el primero de los ficheros elegidos por la usuaria, por eso ponemos [0]
     // este primer fichero es un objeto con información útil del fichero como: nombre, última modificación, tamaño del fichero...
