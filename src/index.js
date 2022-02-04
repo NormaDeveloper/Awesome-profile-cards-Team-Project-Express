@@ -9,13 +9,16 @@ const server = express();
 server.use(cors());
 server.use(express.json({ limit: "10mb" }));
 
-
+//Configuramos ejs
+server.set('view engine', 'ejs')
 
 // Arrancamos el servidor en el puerto 3000
 const serverPort = 4000;
 server.listen(serverPort, () => {
   console.log(`Server listening at http://localhost:${serverPort}`);
 });
+
+
 
 // ENDPOINTS
 //Endpoint Create Cards
@@ -39,8 +42,8 @@ server.post('/card', (req, res) => {
 });
 
 //Endpoint Show Cards
-server.get('/card/99282828282', (req, res) => {
-  //RUTA PARA MOSTRAR TARJETA
+server.get('/card/:cardId', (req, res) => {
+  console.log(req.params)
 });
 
 // Servidor estático
