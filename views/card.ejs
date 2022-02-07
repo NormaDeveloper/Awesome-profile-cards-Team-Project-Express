@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <title>Awesome Cards</title>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    
+
+    <article class="card colorChoice<%= palette%>">
+        <div class="card__rectangle"></div>
+        <div class="card__user">
+          <h1
+            class="card__user--userName js-cardName colorChoice<%= palette%>"
+          >
+            {props.data.name || "Nombre Apellidos"}
+          </h1>
+          <h2 class="card__user--job js-cardJob">
+            {props.data.job || "Front developer"}
+          </h2>
+        </div>
+        <div class="card__img js__profile-image">
+            <img  class="card__img" src="<%=photo%>" alt="Imagen de la usuaria" />
+        </div>
+        <ul class="card__bar">
+          <li class={`card__bar--icons colorChoice${props.data.palette}`}>
+            <a
+              class="js-cardPhone"
+              title="Contáctame"
+              href={`tel:${props.data.phone}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fas fa-mobile-alt"></i>
+            </a>
+          </li>
+          <li class={`card__bar--icons colorChoice${props.data.palette}`}>
+            <a
+              class="js-cardEmail"
+              title="Mándame un correo"
+              href={`mailto:${props.data.email}`}
+            >
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+          <li class={`card__bar--icons colorChoice${props.data.palette}`}>
+            <a
+              class="js-cardLinkedin"
+              title="Visita mi Linkedin"
+              href={`https://www.linkedin.com/in/${props.data.linkedin}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class={`card__bar--icons colorChoice${props.data.palette}`}>
+            <a
+              class="js-cardgithub"
+              title="Visita mi github"
+              href={`https://github.com/${props.data.github}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
     
 </body>
 </html>
