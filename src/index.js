@@ -39,7 +39,7 @@ server.post('/card', (req, res) => {
       ...req.body,
       id: uuidv4(),
     };
-    savedCards.push(req.body);
+    savedCards.push(newCardData);
     const responseSuccess = {
       success: true,
       cardURL: `http://localhost:${serverPort}/card/${newCardData.id}`,
