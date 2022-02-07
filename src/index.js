@@ -13,6 +13,9 @@ server.use(express.json({ limit: '10mb' }));
 //Configuramos ejs
 server.set('view engine', 'ejs');
 
+const staticServer = './src/public-react';
+server.use(express.static(staticServer));
+
 // Arrancamos el servidor en el puerto 3000
 const serverPort = 4000;
 server.listen(serverPort, () => {
