@@ -91,9 +91,8 @@
   }
   &__img {
     grid-column: 1/4;
-    // background-image: url('../../images/defaultAvatar.jpg');
-    background-position: top center;
-    background-size: cover;
+    object-position: center;
+  object-fit: cover;
     background-color: $whiteTwo;
     width: 240px;
     height: 200px;
