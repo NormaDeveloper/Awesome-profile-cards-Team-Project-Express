@@ -57,8 +57,7 @@ server.post("/card", (req, res) => {
     );
     const responseSuccess = {
       success: true,
-      //Cuando usemos heroku ponemos esa dirección aquí y en el fetch de react
-      cardURL: `http://localhost:${serverPort}/card/${newCardData.id}`,
+      cardURL: ` https://project-promo-o-module-4-team5.herokuapp.com/#/cards/${newCardData.id}`,
     };
     res.json(responseSuccess);
   } else {
