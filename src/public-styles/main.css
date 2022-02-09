@@ -8,9 +8,9 @@
   padding: 0;
 }
 
-.body{
+.body {
   height: 100vh;
-  background: linear-gradient(#bfcdd0,#dde9ed);
+  background: linear-gradient(#bfcdd0, #dde9ed);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -499,13 +499,13 @@
 }
 .card__bar--icons a,
 .colorChoice1 {
-  color: #114e4e;
+  color: fuchsia;
 }
 .colorChoice1 .card__rectangle {
-  background-color: #438792;
+  background-color: violet;
 }
 .colorChoice1 .card__bar--icons {
-  border: 2px solid #a2deaf;
+  border: 2px solid pink;
 }
 .colorChoice2 {
   color: #420101;
