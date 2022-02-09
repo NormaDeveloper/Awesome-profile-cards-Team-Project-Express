@@ -1,4 +1,4 @@
-@import '../core/variables';
+@import "../core/variables";
 
 .mainCard {
   width: 100%;
@@ -92,7 +92,7 @@
   &__img {
     grid-column: 1/4;
     object-position: center;
-  object-fit: cover;
+    object-fit: cover;
     background-color: $whiteTwo;
     width: 240px;
     height: 200px;
@@ -125,14 +125,14 @@
 
 //Color palettes icons js
 .colorChoice1 {
-  color: $darkGreenBlue;
+  color: fuchsia;
 
   .card__rectangle {
-    background-color: $dirtyBlue;
+    background-color: violet;
   }
 
   .card__bar--icons {
-    border: solid 2px $hospitalGreen;
+    border: solid 2px pink;
   }
 }
 
