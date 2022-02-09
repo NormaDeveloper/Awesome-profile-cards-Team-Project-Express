@@ -70,10 +70,18 @@ server.post("/card", (req, res) => {
 });
 
 //Endpoint Show Cards
+<<<<<<< HEAD
+server.get('/card/:cardId', (req, res) => {
+  const foundCard = savedCards.find((card) => card.id === req.params.cardId);
+  res.render('card', foundCard);
+  console.log(foundCard);
+  console.log(req.params);
+=======
 server.get("/card/:cardId", (req, res) => {
   const query = db.prepare("SELECT * FROM cards WHERE id = ?");
   const response = query.get(req.params.cardId);
   res.render('card', response);
+>>>>>>> 3a28ca66614124b3da3b1378d885b3a0a26cbfe9
 });
 
 // Servidor estático
