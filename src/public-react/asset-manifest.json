@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.d39336cd.css",
+    "main.css": "./static/css/main.51ceff95.css",
     "main.js": "./static/js/main.db5c98d4.js",
     "static/media/adufflabeers-logo2.png": "./static/media/adufflabeers-logo2.eb7a747d20add944edf6.png",
     "static/media/defaultAvatar.jpg": "./static/media/defaultAvatar.aabbdb3575a52711f49f.jpg",
     "index.html": "./index.html",
-    "main.d39336cd.css.map": "./static/css/main.d39336cd.css.map",
+    "main.51ceff95.css.map": "./static/css/main.51ceff95.css.map",
     "main.db5c98d4.js.map": "./static/js/main.db5c98d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d39336cd.css",
+    "static/css/main.51ceff95.css",
     "static/js/main.db5c98d4.js"
   ]
 }
