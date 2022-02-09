@@ -7,6 +7,15 @@
   margin: 0;
   padding: 0;
 }
+
+.body{
+  height: 100vh;
+  background: linear-gradient(#bfcdd0,#dde9ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .icon {
   color: #e17334;
 }
@@ -465,8 +474,8 @@
 }
 .card__img {
   background-color: #fff;
-  background-position: top;
-  background-size: cover;
+  object-position: center;
+  object-fit: cover;
   grid-column: 1/4;
   height: 200px;
   width: 240px;
