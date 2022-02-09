@@ -57,7 +57,7 @@ server.post('/card', (req, res) => {
 
 //Endpoint Show Cards
 server.get('/card/:cardId', (req, res) => {
-  const foundCard = savedCards.find((card) => card.id === req.params.id);
+  const foundCard = savedCards.find((card) => card.id === req.params.cardId);
   res.render('card', foundCard);
   console.log(foundCard);
   console.log(req.params);
