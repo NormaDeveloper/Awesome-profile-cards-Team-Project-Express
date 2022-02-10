@@ -48,7 +48,6 @@ function App() {
 
   const handleCreateCard = () => {
     dataApi(data).then((dataFromApi) => {
-      console.log(dataFromApi);
       setCardLink(dataFromApi.cardURL);
     });
   };
