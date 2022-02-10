@@ -57,7 +57,7 @@ server.post("/card", (req, res) => {
     );
     const responseSuccess = {
       success: true,
-      cardURL: `https://project-promo-o-module-4-team5.herokuapp.com/index.html#/cards/card/${newCardData.id}`,
+      cardURL: `https://project-promo-o-module-4-team5.herokuapp.com/card/${newCardData.id}`,
     };
     res.json(responseSuccess);
   } else {
