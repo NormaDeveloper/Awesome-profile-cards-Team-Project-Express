@@ -10,6 +10,12 @@
 
 ---
 
+
+<img width="1208" height="700" alt="Awesome Profile Cards" src="https://user-images.githubusercontent.com/93437541/156786715-c24b7faf-eb09-4d52-89cc-6d0d0c36133b.png">
+
+
+<img width="1208" height="700" alt="Awesome Profile Cards" src="https://user-images.githubusercontent.com/93437541/156787049-6bedcc8a-3f42-44db-91f3-2f4d2f6cb9e0.png">
+
 <h3 align="left">1. Introduction</h3>
 <p align="left">
 
